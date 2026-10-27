@@ -1,0 +1,13 @@
+:root {
+  --paper: #e9eff3;
+  --ink: #14213d;
+}
+ 
+body {
+  margin: 0;
+  padding: 2rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
