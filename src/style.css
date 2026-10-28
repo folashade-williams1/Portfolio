@@ -11,3 +11,75 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* ===== ABOUT SECTION ===== */
+section {
+  padding: 2.5rem 0;
+  border-top: 1px solid #b9c6d2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-facts {
+  background: white;
+  border: 1px solid #b9c6d2;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 0;
+}
+
+.about-facts dt {
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.about-facts dt:first-child {
+  margin-top: 0;
+}
+
+.about-facts dd {
+  margin: 0;
+}
+
+/* On phones and small tablets, stack into one column */
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  background: #2b59c3;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.6rem 0.6rem 0;
+}
+
+.btn:hover {
+  background: #14213d;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #14213d;
+  border: 2px solid #14213d;
+}
+
+.btn.outline:hover {
+  background: #14213d;
+  color: white;
+}
