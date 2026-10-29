@@ -83,3 +83,70 @@ h2 {
   background: #14213d;
   color: white;
 }
+
+/* ===== PROJECTS SECTION ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: white;
+  border: 1px solid #b9c6d2;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #b9c6d2;
+}
+
+.project-info {
+  padding: 1.2rem;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem;
+}
+
+.stack {
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-left: 4px solid #f2b01e;
+  padding-left: 0.6rem;
+}
+
+/* ===== PROJECT DETAILS PAGE ===== */
+.detail {
+  max-width: 800px;
+}
+
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.screens figure {
+  margin: 0;
+  background: white;
+  border: 1px solid #b9c6d2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.screens img {
+  width: 100%;
+  background: #b9c6d2;
+}
+
+.screens figcaption {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+}
