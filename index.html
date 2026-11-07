@@ -3,17 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Your Name] | Portfolio</title>
+  <title>Folashade Williams | Developer Portfolio</title>
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 
   <header>
-    <h1>Folashade Williams</h1>
-    <p>Portfolio coming soon.</p>
+    <a class="brand" href="/">Folashade Williams</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
+    <section class="hero">
+      <h1>I build apps that <span class="mark">put data to work</span>.</h1>
+      <p class="intro">I'm Folashade Williams, a final-year Computer Science student who builds database-driven apps with Java, Python and React.</p>
+      <a class="btn alt" href="#projects">See my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
     <section id="about">
       <h2>About me</h2>
 
@@ -32,7 +43,7 @@
           <dd>Business Analyst intern, Unity Bank PLC</dd>
 
           <dt>Skills</dt>
-          <dd>[e.g. Business Requirements Documents, BPMN, Excel, SQL]</dd>
+          <dd>BPMN, Excel, PostgreSQL, JavaFX</dd>
         </dl>
       </div>
     </section>
@@ -43,31 +54,30 @@
       <div class="project-grid">
 
         <article class="project">
-          <img src="/images/project1.png" alt="Screenshot of my final year project">
+          <img src="/images/cafeteria-1.png" alt="Screenshot of the PAU Cafeteria App">
           <div class="project-info">
-            <h3>Database Comparison on Bank Transactions</h3>
-            <p>My final year project. I compare databases on large sets of bank transaction data.</p>
-            <p class="stack">Tech stack: [e.g. PostgreSQL, MongoDB, Python]</p>
+            <h3>PAU Cafeteria App</h3>
+            <p>A desktop app where customers order food and managers run the cafeteria, with separate logins for each role.</p>
+            <p class="stack">Tech stack: JavaFX, PostgreSQL, Java</p>
             <a href="/project.html">Read the full story</a>
           </div>
         </article>
 
         <article class="project">
-          <img src="/images/project2.png" alt="Screenshot of a process map from my internship">
+          <img src="/images/sibas-1.png" alt="Screenshot of the SIBAS student manager">
           <div class="project-info">
-            <h3>Process Mapping at Unity Bank</h3>
-            <p>I wrote Business Requirements Documents and drew BPMN process maps during my internship.</p>
-            <p class="stack">Tools: [e.g. BPMN, Word, Visio]</p>
+            <h3>SIBAS: Student Attendance System</h3>
+            <p>A team project for managing student records and attendance. I built the Student Manager part: registration, bulk CSV upload and course enrollment.</p>
+            <p class="stack">Tech stack: Python, Streamlit, PostgreSQL</p>
           </div>
         </article>
 
         <article class="project">
-          <img src="/images/project3.png" alt="Screenshot of my data analysis project">
+          <img src="/images/network-1.png" alt="Screenshot of my Cisco Packet Tracer network">
           <div class="project-info">
-            <h3>[Project Name]</h3>
-            <p>[One or two sentences about what it does.]</p>
-            <p class="stack">Tech stack: [e.g. Excel, Power BI]</p>
-            <a href="#">Link (if available)</a>
+            <h3>Network Design in Cisco Packet Tracer</h3>
+            <p>A simulated network with dynamic routing, automatic address assignment and access control, with a written report.</p>
+            <p class="stack">Tools: Cisco Packet Tracer, EIGRP, OSPF, DHCP, ACLs</p>
           </div>
         </article>
 
@@ -76,7 +86,7 @@
 
       <section id="contact">
         <h2>Let's work together</h2>
-        <p>I'm open to business analyst, data analyst and IT consulting roles. Send me a message.</p>
+        <p>I'm open to junior developer, internship and project opportunities. Send me a message.</p>
 
         <a class="btn outline" href="mailto:folashadewilliams08@gmail.com">Email me</a>
         <a class="btn outline" href="https://wa.me/2347069602129">Chat on WhatsApp</a>

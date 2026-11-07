@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Database Comparison on Bank Transactions | [Your Name]</title>
+  <title>PAU Caferia App | Folashade Williams</title>
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
@@ -13,24 +13,30 @@
   </header>
 
   <main class="detail">
-    <h1>Database Comparison on Bank Transactions</h1>
+    <h1>PAU Cafeteria App</h1>
 
     <section>
       <h2>Full description</h2>
-      <p>[3 to 5 sentences. What is the project, who is it for, and how did you do it?]</p>
+      <p>The PAU Cafeteria App is a desktop application built with JavaFX and PostgreSQL. 
+        Customers can log in, browse the menu, add items to a cart and place an order. 
+        Managers have their own dashboard to run the cafeteria.
+        [Add 1 or 2 sentences: who it's for, and how it works from start to finish.]</p>
     </section>
 
     <section>
       <h2>The problem I solved</h2>
-      <p>[Banks record huge numbers of transactions. Which type of database handles this best? Explain it in your own words.]</p>
+      <p>[Explain in your own words: how did ordering work before, and what was difficult about it? For example: slow queues, lost orders or no record of sales. 
+        Write only what is true for your project.]</p>
     </section>
 
     <section>
       <h2>Features</h2>
       <ul>
-        <li>[Feature 1]</li>
-        <li>[Feature 2]</li>
-        <li>[Feature 3]</li>
+        <li>Sign up and log in, with passwords stored securely using BCrypt hashing</li>
+        <li>Separate roles for Manager and Customer, each seeing different screens</li>
+        <li>Shopping cart for customers</li>
+        <li>Order placement saved to a PostgreSQL database</li>
+        <li>Manager dashboard [add what it shows or lets the manager do]</li>
       </ul>
     </section>
 
@@ -38,12 +44,16 @@
       <h2>Screenshots</h2>
       <div class="screens">
         <figure>
-          <img src="/images/fyp-1.png" alt="Screenshot 1 of the project">
-          <figcaption>[Caption 1]</figcaption>
+          <img src="/images/cafeteria-1.png" alt="Login screen of the cafeteria app">
+            <figcaption>Login screen</figcaption>
         </figure>
         <figure>
-          <img src="/images/fyp-2.png" alt="Screenshot 2 of the project">
-          <figcaption>[Caption 2]</figcaption>
+            <img src="/images/cafeteria-2.png" alt="Customer menu and cart">
+            <figcaption>Customer menu and cart</figcaption>
+        </figure>
+        <figure>
+            <img src="/images/cafeteria-3.png" alt="Manager dashboard">
+            <figcaption>Manager dashboard</figcaption>
         </figure>
       </div>
     </section>
@@ -51,15 +61,16 @@
     <section>
       <h2>Technologies used</h2>
       <ul>
-        <li>[e.g. PostgreSQL]</li>
-        <li>[e.g. MongoDB]</li>
-        <li>[e.g. Python]</li>
+        <li>Java and JavaFX for the screens</li>
+        <li>PostgreSQL for the database</li>
+        <li>MVC (Model-View-Controller) architecture to organise the code</li>
+        <li>BCrypt for password hashing</li>
       </ul>
     </section>
 
     <section>
       <h2>What I learned</h2>
-      <p>[2 to 4 sentences. What was hard? What would you do differently?]</p>
+      <p>This was my first large Java and JavaFX project. [Write 2 to 4 sentences. For example: what was hardest, what you understand now about MVC, databases or password security, and what you would do differently.]</p>
     </section>
   </main>
 
