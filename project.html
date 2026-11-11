@@ -20,17 +20,20 @@
   </header>
 
   <main class="detail">
-    <p><a href="/#projects">&larr; Back to projects</a></p>
+    <a class="btn alt back-btn" href="/#projects">&larr; Back to projects</a>
     <h1>A Cafeteria App</h1>
 
     <section>
       <h2>Full description</h2>
-      <p>The Cafeteria App is a desktop application built with JavaFX and PostgreSQL. Customers can log in, browse the menu, add items to a cart and place an order. Managers have their own dashboard to run the cafeteria. [Add 1 or 2 sentences: who it's for, and how it works from start to finish.]</p>
+      <p>The PAU Cafeteria App is a desktop application I built as a class assignment, using JavaFX for the interface and PostgreSQL for the database. 
+        It lets customers log in, browse the menu, add items to a cart and place an order, while managers have a separate dashboard to oversee the cafeteria. 
+        The app follows an MVC (Model-View-Controller) structure, separating the interface, the data and the logic that connects them.</p>
     </section>
 
     <section>
       <h2>The problem I solved</h2>
-      <p>[Explain in your own words: how did ordering work before, and what was difficult about it? Mention what you worked out about who would use the app and what each role (manager vs customer) needed before you started building.]</p>
+      <p>A cafeteria needs a way to take orders and manage the menu without relying on paper or manual tracking, while also keeping customer and staff access separate. 
+        The app addresses this by giving customers a self-service way to order food, and giving managers a dashboard to oversee operations, with each role seeing only the screens meant for them.</p>
     </section>
 
     <section>
@@ -40,37 +43,51 @@
         <li>Separate roles for Manager and Customer, each seeing different screens</li>
         <li>Shopping cart for customers</li>
         <li>Order placement saved to a PostgreSQL database</li>
-        <li>Manager dashboard [add what it shows or lets the manager do]</li>
+        <li>Manager dashboard for overseeing cafeteria operations:adding or deleting items, editing prices and descriptions </li>
       </ul>
     </section>
 
     <section>
       <h2>Screenshots</h2>
-      <div class="screens">
-        <figure>
-          <img src="/images/cafeteria-1.png" alt="Login screen of the cafeteria app">
-          <figcaption>Login screen</figcaption>
-        </figure>
-        <figure>
+
+      <div class="slideshow">
+        <button class="slide-arrow prev" onclick="changeSlide(-1)" aria-label="Previous screenshot">&#10094;</button>
+
+        <div class="slide active">
+          <img src="/images/cafeteria-1.png" alt="Login screen">
+          <p>Login screen</p>
+        </div>
+        <div class="slide">
           <img src="/images/cafeteria-2.png" alt="Customer landing page">
-          <figcaption>Customer landing page</figcaption>
-        </figure>
-        <figure>
+          <p>Customer landing page</p>
+        </div>
+        <div class="slide">
           <img src="/images/cafeteria-3.png" alt="Customer menu">
-          <figcaption>Customer menu</figcaption>
-        </figure>
-        <figure>
+          <p>Customer menu</p>
+        </div>
+        <div class="slide">
           <img src="/images/cafeteria-4.png" alt="Customer cart">
-          <figcaption>Customer cart</figcaption>
-        </figure>
-        <figure>
+          <p>Customer cart</p>
+        </div>
+        <div class="slide">
           <img src="/images/cafeteria-5.png" alt="Customer orders">
-          <figcaption>Customer orders</figcaption>
-        </figure>
-        <figure>
+          <p>Customer orders</p>
+        </div>
+        <div class="slide">
           <img src="/images/cafeteria-6.png" alt="Manager dashboard">
-          <figcaption>Manager dashboard</figcaption>
-        </figure>
+          <p>Manager dashboard</p>
+        </div>
+
+        <button class="slide-arrow next" onclick="changeSlide(1)" aria-label="Next screenshot">&#10095;</button>
+
+        <div class="slide-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+          <span class="dot" onclick="goToSlide(3)"></span>
+          <span class="dot" onclick="goToSlide(4)"></span>
+          <span class="dot" onclick="goToSlide(5)"></span>
+        </div>
       </div>
     </section>
 
@@ -86,13 +103,39 @@
 
     <section>
       <h2>What I learned</h2>
-      <p>This was my first large Java and JavaFX project. [Write 2 to 4 sentences. For example: what was hardest, what you understand now about MVC, databases or password security, and what you would do differently.]</p>
+      <p>This was my first substantial Java and JavaFX project, and it was where I properly learned how MVC architecture separates concerns in a real application, rather than just as a diagram in a lecture. 
+        Working with PostgreSQL also taught me how a desktop app connects to and manages a live database, and implementing BCrypt gave me a practical look at why passwords should never be stored as plain text. 
+        If I built it again, I'd plan the database tables more carefully before writing the interface.</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Folashade Williams</p>
   </footer>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
 
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+  </script>
 </body>
 </html>
