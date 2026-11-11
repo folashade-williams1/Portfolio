@@ -1,9 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Folashade Williams | Developer and Business Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600&display=swap">
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
@@ -18,22 +20,30 @@
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
-      <h1>I build apps and work out what they should do.</h1>
-      <p class="intro">I'm Folashade Williams, a final-year Computer Science student who builds database-driven apps, and I'm most interested in business and system analysis</p>
-      <a class="btn alt" href="#projects">See my work</a>
-      <a class="btn alt" href="#contact">Get in touch</a>
+      <div class="hero-text">
+        <p class="badge">Open to work</p>
+        <h1>I build apps and work out what they should do.</h1>
+        <p class="intro">I'm Folashade Williams, a final-year Computer Science student. I build database-driven apps, and I'm most interested in business and systems analysis: understanding a problem before solving it.</p>
+        <a class="btn alt" href="#projects">See my work</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="hero-photo">
+        <img src="/images/profile.jpeg" alt="Photo of me">
+      </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
       <h2>About me</h2>
-
       <div class="about-grid">
         <div class="about-text">
           <p>I'm Folashade Williams, a final-year Computer Science student at Pan-Atlantic University in Lagos, Nigeria.</p>
-          <p>The part I enjoy most is the thinking before the coding: finding out what a business needs, writing it down clearly, mapping out how a process works and using data to support decisions.</p>
-          <p>I'm open to business analyst, systems analyst, internship and junior developer opportunities.</p> 
-          <p>I'm looking for roles where I can use both sides: systems analyst, junior developer.</p>
+          <p>The part I enjoy most is the thinking before the code: finding out what a business needs, writing it down clearly and mapping how a process works. During my internship as a Business Analyst at Unity Bank PLC, I wrote Business Requirements Documents and drew BPMN process maps.</p>
+          <p>I'm looking for roles where I can use both sides: business analyst, systems analyst, junior developer.</p>
         </div>
 
         <dl class="about-facts">
@@ -43,18 +53,18 @@
           <dt>Experience</dt>
           <dd>Business Analyst intern, Unity Bank PLC</dd>
 
-          <dt>Analysis Skills</dt>
-          <dd>BPMN process maps, Excel </dd>
+          <dt>Analysis skills</dt>
+          <dd>Business Requirements Documents, BPMN process maps</dd>
 
           <dt>Built with</dt>
-          <dd>Java, JavaFX, Python, React, PostgreSQL</dd>
+          <dd>Java, JavaFX, Python, React, FastAPI, PostgreSQL, SQLite</dd>
         </dl>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
-
       <div class="project-grid">
 
         <article class="project">
@@ -68,6 +78,15 @@
         </article>
 
         <article class="project">
+          <img src="/images/tastybites-1.png" alt="Screenshot of the TastyBites Customer Manager customer list">
+          <div class="project-info">
+            <h3>TastyBites Customer Manager</h3>
+            <p>A course project for managing a restaurant's customers and orders: adding, viewing, editing and deleting customer records, and recording orders.</p>
+            <p class="stack">Tech stack: React, FastAPI, SQLite</p>
+          </div>
+        </article>
+
+        <article class="project">
           <img src="/images/sibas-1.png" alt="Screenshot of the SIBAS student manager">
           <div class="project-info">
             <h3>SIBAS: Student Attendance System</h3>
@@ -76,27 +95,19 @@
           </div>
         </article>
 
-        <article class="project">
-          <img src="/images/network-1.png" alt="Screenshot of my Cisco Packet Tracer network">
-          <div class="project-info">
-            <h3>Network Design in Cisco Packet Tracer</h3>
-            <p>A simulated network with dynamic routing, automatic address assignment and access control, with a written report.</p>
-            <p class="stack">Tools: Cisco Packet Tracer, EIGRP, OSPF, DHCP, ACLs</p>
-          </div>
-        </article>
-
       </div>
     </section>
 
-      <section id="contact">
-        <h2>Let's work together</h2>
-        <p>I'm open to business analyst, systems analyst, internship and junior developer opportunities. Send me a message.</p>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Let's work together</h2>
+      <p>I'm open to business analyst, systems analyst, internship and junior developer opportunities. Send me a message.</p>
+      <a class="btn" href="folashadewilliams08@gmail.com">Email me</a>
+      <a class="btn alt" href="https://wa.me/2347069602129">Chat on WhatsApp</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/folashade-williams">LinkedIn</a>
+    </section>
 
-        <a class="btn outline" href="mailto:folashadewilliams08@gmail.com">Email me</a>
-        <a class="btn outline" href="https://wa.me/2347069602129">Chat on WhatsApp</a>
-        <a class="btn outline" href="https://www.linkedin.com/in/folashade-williams ">LinkedIn</a>
-      </section>
-</main>
+  </main>
 
   <footer>
     <p>&copy; 2026 Folashade Williams</p>
